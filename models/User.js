@@ -22,7 +22,7 @@ const Schema = new mongoose.Schema
     },
 
     Date_Naissance:{
-        type: Date,
+        type: String,
     },
 
     Role:{
@@ -36,6 +36,17 @@ const Schema = new mongoose.Schema
     Filiere:{
         type: String,   
     },
+    IsActive:{
+        type: Boolean,
+        default: false,
+    },
+    ActivationCode:{
+        type: String,
+    },
+    Banne:{
+        type: Boolean,
+        default:false,
+    }
 },  {timeStamps:true})
 
 module.exports = mongoose.model('User', Schema)
