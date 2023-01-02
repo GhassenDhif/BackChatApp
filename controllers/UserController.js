@@ -4,9 +4,7 @@ const User = require('../models/User')
 const index = (req,res,next)=>{
     User.find()
     .then(response =>{
-        res.json({
-            response
-        })
+        res.json(response)
     }
     )
     .catch(error =>{
@@ -16,6 +14,7 @@ const index = (req,res,next)=>{
     }
     )
 }
+
 
 
 

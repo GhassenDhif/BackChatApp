@@ -6,7 +6,7 @@ const morgan        = require('morgan')
 const dotenv = require('dotenv')
 dotenv.config()
 const UserRoute = require('./routes/user')
-const hostname='192.168.1.15'
+const hostname='192.168.1.19'
 const AuthRoute = require('./routes/auth')
 mongoose.connect('mongodb://127.0.0.1:27017/testdb')
 const db = mongoose.connection
